@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromas de Luz</title>
+    <link rel="icon" type="img/Diseño Sin Título - 1.png" href="img/Diseño Sin Título - 1.png">
+    <style>
+        :root {
+            --color-primario: #d4a373;
+            --color-secundario: #faedcd;
+            --color-fondo: #fffaf3;
+            --color-texto: #5a4634;
+            --color-oscuro: #3d2f25;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--color-fondo);
+            color: var(--color-texto);
+            font-family: montserrat;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: var(--color-secundario);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        header img {
+            height: 160px;
+            
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--color-oscuro);
+            font-weight: 600;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        nav a:hover {
+            color: var(--color-primario);
+            text-align: center;
+        }
+
+        /* HERO */
+        .hero {
+            height: 400px;
+            background: url('banner.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            background: rgba(0,0,0,0.4);
+            padding: 20px 40px;
+            border-radius: 12px;
+            backdrop-filter: blur(5px);
+        }
+
+        /* SECCIONES */
+        section {
+            padding: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--color-oscuro);
+            margin-bottom: 30px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 14px;
+            height: 1000px;
+            object-fit: cover;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--color-primario);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #b5835a;
+        }
+
+        /* WHATSAPP */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--color-oscuro);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-family: montserrat  ;
+        }
+
+        footer img {
+            width: 18px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/Diseño Sin Título - 1.png" alt="Logo Aromas de Luz">
+        <nav>
+            <a href="#velas">Velas</a>
+            <a href="#aromas">Aromatizadores</a>
+            <a href="#difusores">Difusores</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Aromas de Luz – Hecho a mano con amor</h1>
+    </div>
+
+    <section id="velas">
+        <h2>Velas Artesanales</h2>
+        <div class="productos">
+
+            <div class="card">
+                <img src="img/roseta.jpg" alt="Vela 2">
+                <h3>Vela Floral</h3>
+                <p>Perfume cálido y elegante.</p>
+                <a class="btn" href="#">Comprar</a>
+            </div>
+
+                 <div class="card">
+                <img src="img/corazon.jpg" alt="Vela 2">
+                <h3>Vela Floral</h3>
+                <p>Perfume cálido y elegante.</p>
+                <a class="btn" href="#">Comprar</a>
+            </div>
+
+                 <div class="card">
+                <img src="img/pinos.jpg" alt="Vela 2">
+                <h3>Vela Floral</h3>
+                <p>Perfume cálido y elegante.</p>
+                <a class="btn" href="#">Comprar</a>
+            </div>
+
+                 <div class="card">
+                <img src="img/ositos.jpg" alt="Vela 2">
+                <h3>Vela Floral</h3>
+                <p>Perfume cálido y elegante.</p>
+                <a class="btn" href="#">Comprar</a>
+            </div>
+
+                 <div class="card">
+                <img src="img/arcoiris.jpg" alt="Vela 2">
+                <h3>Vela Floral</h3>
+                <p>Perfume cálido y elegante.</p>
+                <a class="btn" href="#">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="aromas">
+        <h2>Aromatizadores</h2>
+        <div class="productos">
+            <div class="card">
+                <img src="img/home spray.jpg" alt="Aroma 1">
+                <h3>Aromatizador Ambiental</h3>
+                <a class="btn" href="#">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="difusores">
+        <h2>Difusores</h2>
+        <div class="productos">
+            <div class="card">
+                <img src="img/difusores (2).jpg" alt="Difusor 1">
+                <h3>Difusor de Varillas</h3>
+                <a class="btn" href="#">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <p>Aromas de Luz © 2025</p>
+        <p>Hecho con amor y dedicación</p>
+        <p> <img src="img/instagram_174855.png" alt=""> @aaromasdeluzz_</p>
+       
+    </footer>
+
+    <a class="whatsapp" href="https://wa.me/5491159656075">💬</a>
+    <p>catalina suarez galli</p>
+
+</body>
+</html>
